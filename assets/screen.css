@@ -7,3 +7,43 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+html {
+  font-size: 17px;
+  line-height: 22px;
+  font-family: "Open Sans", Trebuchet, Helvetica, Arial, sans-sans-serif;
+  padding: 11px;
+}
+article {
+  padding-top: 22px;
+}
+h1,h2,h3 {
+  font-size: 25.5px;
+  line-height: 33px;
+  font-family: Petrona, Georgia, "Times New Roman", serif;
+  font-weight: 500;
+}
+h1 {
+  font-size: 38.25px;
+  line-height: 44px;
+  padding-top: 11px;
+}
+h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+p {
+  padding-bottom: 11px;
+  hyphens: auto;
+}
+p.tagline {
+  font-family: Petrona, Georgia, "Times New Roman", serif;
+  font-style: italic;
+}
+ul {
+  margin-left: 22px;
+  list-style-type: square;
+  padding-bottom: 5.5px;
+}
+li {
+  padding-bottom: 5.5px;
+}
