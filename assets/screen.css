@@ -37,6 +37,10 @@ h1 a {
   color: inherit;
   text-decoration: none;
 }
+h1 b {
+  text-transform: lowercase;
+  font-variant-caps: all-small-caps;
+}
 p {
   padding-bottom: 11px;
   hyphens: auto;
@@ -44,6 +48,10 @@ p {
 p.tagline {
   font-family: Petrona, Georgia, "Times New Roman", serif;
   font-style: italic;
+}
+img {
+  display: block;
+  max-width: 100%;
 }
 ul {
   margin-left: 22px;
