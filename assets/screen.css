@@ -12,6 +12,8 @@ html {
   line-height: 22px;
   font-family: "Open Sans", Trebuchet, Helvetica, Arial, sans-sans-serif;
   padding: 11px;
+  background: #f1ecd9;
+  color: #432e2d;
 }
 article {
   padding-top: 22px;
@@ -48,6 +50,7 @@ p {
 p.tagline {
   font-family: Petrona, Georgia, "Times New Roman", serif;
   font-style: italic;
+  font-size: 20px;
 }
 img {
   display: block;
@@ -65,7 +68,7 @@ li {
   font-style: italic;
 }
 .professionals {
-  background-color: #EEE;
+  background: #cfc0aa;
   margin: 0 -11px;
   padding: 11px;
 }
