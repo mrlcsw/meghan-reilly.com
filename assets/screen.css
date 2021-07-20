@@ -138,6 +138,5 @@ li {
   }
   #content > .professionals {
     grid-column: leftside;
-    grid-row: span 2;
   }
 }
