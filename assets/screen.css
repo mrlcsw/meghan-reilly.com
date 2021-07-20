@@ -18,7 +18,8 @@ html {
   background: #f1ecd9;
   color: #432e2d;
 }
-article {
+article,
+aside {
   padding-top: 22px;
 }
 footer {
@@ -75,4 +76,68 @@ li {
   background: #cfc0aa;
   margin: 0 -11px;
   padding: 11px;
+}
+
+@media screen and (min-width: 570px) {
+  html {
+    padding: 3.859649123%; /* 22/570 = 3.859649123% */
+  }
+  #header {
+    display: grid;
+    grid-template-columns: [headshot-start] 30% [headshot-end copy-start] 1fr [copy-end];
+    grid-template-rows: [headshot-start] auto [copy-start] auto auto [headshot-end copy-end];
+    grid-column-gap: 11px;
+  }
+  #header h1,
+  #header .tagline {
+    grid-column: copy;
+    max-width: 450px;
+  }
+  #header figure {
+    grid-column: headshot;
+    grid-row: headshot;
+  }
+}
+
+@media screen and (min-width: 630px) {
+  #content {
+    display: grid;
+    grid-template-columns: [null-start] 30% [null-end copy-start] 1fr [copy-end];
+    grid-column-gap: 11px;
+  }
+  #content > * {
+    grid-column: copy;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  #header {
+    grid-template-columns: [headshot-start] 1fr [headshot-end copy-start] 1fr 1fr 1fr [copy-end] 1fr;
+    grid-column-gap: 22px;
+  }
+  #content {
+    grid-template-columns: [copy-start] 1fr 1fr 1fr [copy-end rightside-start] 1fr 1fr [rightside-end];
+    grid-column-gap: 22px;
+  }
+  #content > .credentials,
+  #content > .professionals {
+    grid-column: rightside;
+  }
+  #content > .professionals {
+    padding-top: 22px;
+    grid-row: span 3;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  #header {
+    grid-template-columns: [headshot-start] 1fr [headshot-end copy-start] 1fr 1fr 1fr [copy-end];
+  }
+  #content {
+    grid-template-columns: [leftside-start] 1fr [leftside-end copy-start] 1fr 1fr [copy-end rightside-start] 1fr [rightside-end];
+  }
+  #content > .professionals {
+    grid-column: leftside;
+    grid-row: span 2;
+  }
 }
