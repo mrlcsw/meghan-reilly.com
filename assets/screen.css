@@ -7,6 +7,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+* {
+  box-sizing: content-box;
+}
 html {
   font-size: 17px;
   line-height: 22px;
@@ -55,6 +58,7 @@ p.tagline {
 img {
   display: block;
   max-width: 100%;
+  border: 1px solid #432e2d;
 }
 ul {
   margin-left: 22px;
