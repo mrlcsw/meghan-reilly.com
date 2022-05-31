@@ -69,6 +69,17 @@ ul {
 li {
   padding-bottom: 5.5px;
 }
+a {
+  hyphens: none;
+}
+.contact {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.contact a {
+  color: inherit;
+}
 .credentials {
   font-style: italic;
 }
@@ -89,6 +100,7 @@ li {
     grid-column-gap: 11px;
   }
   #header h1,
+  #header .contact,
   #header .tagline {
     grid-column: copy;
     max-width: 450px;
