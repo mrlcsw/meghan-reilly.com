@@ -94,6 +94,17 @@ a {
   margin: 11px -11px 0 -11px;
   padding: 11px;
 }
+.groups {
+  background: #672925;
+  color: #f1ecd9;
+}
+.groups h3 {
+  padding-top: 11px;
+}
+.groups a {
+  color: inherit;
+}
+
 
 @media screen and (min-width: 570px) {
   html {
