@@ -136,14 +136,16 @@ a {
   #content {
     grid-template-columns: [copy-start] 1fr 1fr 1fr [copy-end rightside-start] 1fr 1fr [rightside-end];
     grid-column-gap: 22px;
+    align-items: start;
   }
+  #content > .groups,
   #content > .credentials,
   #content > .professionals {
     grid-column: rightside;
   }
   #content > .professionals {
     padding-top: 22px;
-    grid-row: span 3;
+    grid-row: span 4;
   }
 }
 
