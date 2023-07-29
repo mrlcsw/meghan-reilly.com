@@ -88,9 +88,10 @@ a {
 .credentials {
   font-style: italic;
 }
+.groups,
 .professionals {
   background: #cfc0aa;
-  margin: 0 -11px;
+  margin: 11px -11px 0 -11px;
   padding: 11px;
 }
 
