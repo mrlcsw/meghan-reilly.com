@@ -98,8 +98,19 @@ a {
   background: #672925;
   color: #f1ecd9;
 }
+.groups h2 {
+  line-height: 28px;
+  padding-bottom: 5.5px;
+}
 .groups h3 {
   padding-top: 11px;
+  padding-bottom: 11px;
+}
+.new-applicants {
+  border-left: 3px solid #f1ecd9;
+  font-style: italic;
+  padding: 0 0 4px 8px;
+  margin-bottom: 11px;
 }
 .groups a {
   color: inherit;
