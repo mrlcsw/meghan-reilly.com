@@ -143,6 +143,7 @@ a {
   #content {
     display: grid;
     grid-template-columns: [null-start] 30% [null-end copy-start] 1fr [copy-end];
+    grid-auto-rows: minmax(0, auto);
     grid-column-gap: 11px;
   }
   #content > * {
@@ -158,6 +159,7 @@ a {
   #content {
     grid-template-columns: [copy-start] 1fr 1fr 1fr [copy-end rightside-start] 1fr 1fr [rightside-end];
     grid-column-gap: 22px;
+    grid-auto-flow: dense;
     align-items: start;
   }
   #content > .groups,
@@ -165,9 +167,15 @@ a {
   #content > .professionals {
     grid-column: rightside;
   }
+  #content > .groups {
+    grid-row: 1 / span 3;
+  }
   #content > .professionals {
     padding-top: 22px;
-    grid-row: span 4;
+    grid-row: 4 / span 6;
+  }
+  #content > .credentials {
+    grid-row: 3 / span 2;
   }
 }
 
@@ -178,7 +186,12 @@ a {
   #content {
     grid-template-columns: [leftside-start] 1fr [leftside-end copy-start] 1fr 1fr [copy-end rightside-start] 1fr [rightside-end];
   }
+  #content > .credentials {
+    grid-column: rightside;
+    grid-row: 4 / span 3;
+  }
   #content > .professionals {
+    grid-row: 3 / span 4;
     grid-column: leftside;
   }
 }
