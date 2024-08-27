@@ -98,6 +98,15 @@ a {
   background: #672925;
   color: #f1ecd9;
 }
+.pill {
+  background: #7AEBFF;
+  color: #222;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 3px 6px;
+  margin-bottom: 11px;
+  text-transform: uppercase;
+}
 .groups h2 {
   line-height: 28px;
   padding-bottom: 5.5px;
